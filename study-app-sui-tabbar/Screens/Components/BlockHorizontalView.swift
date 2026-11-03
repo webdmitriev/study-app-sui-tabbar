@@ -15,7 +15,7 @@ struct BlockHorizontalView: View {
     let items: [UniversalBlockData]
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .leading, spacing: 14) {
             HStack(alignment: .top, spacing: 28) {
                 Text(title)
                     .modifier(TextModifier(fontSize: AppConstants.Typography.titleContainer, fontWeight: .medium))
