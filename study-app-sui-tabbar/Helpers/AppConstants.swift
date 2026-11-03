@@ -10,6 +10,7 @@ import SwiftUI
 enum AppConstants {
     enum Layout {
         static let offsetPage: CGFloat = 16
+        static let brs: CGFloat = 18
     }
     
     enum Typography {

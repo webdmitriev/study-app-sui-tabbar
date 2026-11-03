@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct BlockHorizontalView: View {
-    let title: String = "Your Courses"
-    let buttonTitle: String = "See more"
-    let buttonIcon: String = "chevron.right"
+    let title: String
+    let buttonTitle: String
+    let buttonIcon: String
+    
+    let items: [UniversalBlockData]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -39,12 +41,13 @@ struct BlockHorizontalView: View {
             .frame(maxWidth: .infinity)
             .padding(.horizontal, AppConstants.Layout.offsetPage)
             
-            ScrollView {
+            ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
-                    VStack(alignment: .leading) {
-                        Text("www")
+                    ForEach(items) { item in
+                        UniversalBlockView(item: item)
                     }
                 }
+                .padding(.horizontal, AppConstants.Layout.offsetPage)
             }
         }
     }

@@ -3,26 +3,27 @@
 Учебный проект: кастомный TabBar в SwiftUI с дефолтным поведением для iPhone Duo.
 
 ## 🚀 Возможности
-
 - Работа с кастомным TabBar
 - Модификаторы
   - `AppConstants`
 - Компоненты
   - `BlockHorizontalView`
   - `HeaderComponentView`
+- Работа с цветом
+  - `extension Color(hex:)`
+
 
 ## 🛠 Технологии
-
 - SwiftUI
 
-## 📸 Скриншоты
 
+## 📸 Скриншоты
 | Главный экран |
 | :-----------: |
 | ![Главный экран](https://api.webdmitriev.com/wp-content/uploads/2025/05/boholano-01-scaled.jpg) |
 
-## ⚙️ Установка
 
+## ⚙️ Установка
 1. Клонируйте репозиторий:
 
 ```bash

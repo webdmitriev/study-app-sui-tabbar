@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    let vm = HomeViewModal()
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 32) {
@@ -16,7 +18,20 @@ struct HomeView: View {
                 }
                 .padding(.horizontal, AppConstants.Layout.offsetPage)
                 
-                BlockHorizontalView()
+                BlockHorizontalView(title: "Your Courses",
+                                    buttonTitle: "See more",
+                                    buttonIcon: "chevron.right",
+                                    items: self.vm.getAllCources())
+                
+                BlockHorizontalView(title: "Webinars",
+                                    buttonTitle: "See more",
+                                    buttonIcon: "chevron.right",
+                                    items: self.vm.getAllWebinars())
+                
+                BlockHorizontalView(title: "E-Book",
+                                    buttonTitle: "See more",
+                                    buttonIcon: "chevron.right",
+                                    items: self.vm.getAllEBooks())
             }
         }
         .background(.appBg)
