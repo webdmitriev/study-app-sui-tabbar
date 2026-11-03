@@ -11,7 +11,7 @@ import SwiftUI
 struct study_app_sui_tabbarApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainView()
         }
     }
 }
