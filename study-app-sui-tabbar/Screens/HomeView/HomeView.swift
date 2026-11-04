@@ -14,7 +14,7 @@ struct HomeView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 32) {
                 VStack {
-                    HeaderComponentView()
+                    HeaderComponentView(title: "What are you \nstudying?")
                 }
                 .padding(.horizontal, AppConstants.Layout.offsetPage)
                 

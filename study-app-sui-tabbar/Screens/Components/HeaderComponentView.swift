@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct HeaderComponentView: View {
+    var title: String
+
     var body: some View {
-        Text("What you are \nstudying?")
+        Text(title)
             .modifier(TextModifier(fontSize: AppConstants.Typography.header, fontWeight: .medium))
             .lineHeight(.exact(points: AppConstants.Typography.header * 1.4))
     }
